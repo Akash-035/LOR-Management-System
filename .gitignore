@@ -1,0 +1,36 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+coverage/
+
+# Logs and runtime output
+*.log
+logs/
+
+# Tunnel and deployment credentials
+cloudflared-config.yml
+cloudflared/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
