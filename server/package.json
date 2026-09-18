@@ -1,0 +1,35 @@
+{
+  "name": "lor-server-phase1-auth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "dev:watch": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "lint": "node -e \"console.log('lint placeholder')\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "morgan": "^1.10.1",
+    "multer": "^2.1.1",
+    "nodemailer": "^8.0.1",
+    "pdfkit": "^0.16.0",
+    "pino": "^10.3.1",
+    "qrcode": "^1.5.4",
+    "resend": "^6.11.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "pino-pretty": "^13.1.3"
+  }
+}

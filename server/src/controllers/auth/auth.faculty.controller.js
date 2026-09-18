@@ -1,0 +1,34 @@
+import asyncHandler from '../../utils/asyncHandler.js';
+import { created, ok } from '../../utils/apiResponse.js';
+import {
+  registerFacultyRequest,
+  loginFaculty,
+  approveFaculty,
+  updateFacultySubjects,
+  updateFacultyProfile
+} from '../../services/auth/auth.faculty.service.js';
+
+export const registerFacultyController = asyncHandler(async (req, res) => {
+  const result = await registerFacultyRequest(req.validated.body);
+  return created(res, result, 'Faculty request submitted');
+});
+
+export const loginFacultyController = asyncHandler(async (req, res) => {
+  const result = await loginFaculty(req.validated.body);
+  return ok(res, result, 'Faculty login success');
+});
+
+export const approveFacultyController = asyncHandler(async (req, res) => {
+  const faculty = await approveFaculty({ facultyId: req.params.facultyId, adminId: req.user.id });
+  return ok(res, faculty, 'Faculty approved');
+});
+
+export const updateFacultySubjectsController = asyncHandler(async (req, res) => {
+  const faculty = await updateFacultySubjects({ facultyId: req.user.id, subjects: req.validated.body.subjects });
+  return ok(res, faculty, 'Subjects updated');
+});
+
+export const updateFacultyProfileController = asyncHandler(async (req, res) => {
+  const faculty = await updateFacultyProfile({ facultyId: req.user.id, payload: req.validated.body });
+  return ok(res, faculty, 'Profile updated');
+});
