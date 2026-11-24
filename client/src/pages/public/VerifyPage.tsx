@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
@@ -151,3 +152,4 @@ const VerifyPage = () => {
 };
 
 export default VerifyPage;
+

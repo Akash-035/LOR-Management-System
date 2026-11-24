@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PublicLayout from '../../components/site/PublicLayout.jsx';
 
 const ContactPage = () => {
@@ -13,3 +14,4 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+

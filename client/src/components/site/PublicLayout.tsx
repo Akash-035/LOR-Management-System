@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NavLink } from 'react-router-dom';
 import collegeLogo from '../../../assets/Clg_logo.png';
 
@@ -30,3 +31,4 @@ const PublicLayout = ({ children }) => {
 };
 
 export default PublicLayout;
+

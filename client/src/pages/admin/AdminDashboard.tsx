@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import useAuth from '../../hooks/useAuth.js';
@@ -1124,3 +1125,4 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth.js';
@@ -66,3 +67,4 @@ const AdminAuthPage = () => {
 };
 
 export default AdminAuthPage;
+

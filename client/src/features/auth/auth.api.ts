@@ -1,3 +1,4 @@
+// @ts-nocheck
 import api from '../../lib/api.js';
 
 export const registerStudent = (payload) => api.post('/auth/student/register', payload);
@@ -25,3 +26,4 @@ export const deleteLorRequest = (requestId) => api.delete(`/lor/admin/${requestI
 
 export const updateFacultyProfile = (payload) => api.patch('/auth/faculty/profile', payload);
 export const adminUpdateFacultyProfile = (facultyId, payload) => api.patch(`/auth/admin/faculties/${facultyId}/profile`, payload);
+

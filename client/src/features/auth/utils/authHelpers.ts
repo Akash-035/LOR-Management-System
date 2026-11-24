@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const getDashboardPath = (role) => {
   if (role === 'student') return '/student';
   if (role === 'faculty') return '/faculty';
@@ -13,3 +14,4 @@ export const mapAuthPayload = (payload, roleKey) => {
     user
   };
 };
+

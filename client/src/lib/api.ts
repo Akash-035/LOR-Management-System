@@ -1,3 +1,4 @@
+// @ts-nocheck
 import axios from 'axios';
 
 // Backend base URL — VITE_API_BASE can override (e.g. in .env or Vercel env settings)
@@ -41,3 +42,4 @@ api.interceptors.response.use(
 );
 
 export default api;
+

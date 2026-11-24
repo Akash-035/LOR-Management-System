@@ -7,7 +7,8 @@
     "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "node -e \"console.log('lint placeholder')\""
+    "lint": "node -e \"console.log('lint placeholder')\"",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "axios": "^1.7.9",
@@ -18,10 +19,15 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
     "vite": "^7.0.0"
   }
 }

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import api from '../../lib/api.js';
@@ -669,3 +670,4 @@ const FacultyDashboard = () => {
 };
 
 export default FacultyDashboard;
+

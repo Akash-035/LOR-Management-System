@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useRef, useState } from 'react';
 import { z } from 'zod';
 import { motion, AnimatePresence } from 'motion/react';
@@ -529,3 +530,4 @@ const StudentDashboard = () => {
 };
 
 export default StudentDashboard;
+

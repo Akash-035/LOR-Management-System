@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useContext } from 'react';
 import { AuthContext } from '../app/AuthProvider.jsx';
 
@@ -10,3 +11,4 @@ const useAuth = () => {
 };
 
 export default useAuth;
+

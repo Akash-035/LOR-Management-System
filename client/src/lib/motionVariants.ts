@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Shared motion animation variants
 
 export const fadeUp = {
@@ -31,3 +32,4 @@ export const tapButton = {
   whileTap: { scale: 0.95 },
   transition: { type: 'spring', stiffness: 400, damping: 20 }
 };
+

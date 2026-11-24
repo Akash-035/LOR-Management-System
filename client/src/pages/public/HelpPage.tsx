@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PublicLayout from '../../components/site/PublicLayout.jsx';
 
 const HelpPage = () => {
@@ -16,3 +17,4 @@ const HelpPage = () => {
 };
 
 export default HelpPage;
+

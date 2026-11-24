@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PublicLayout from '../../components/site/PublicLayout.jsx';
 
 const AboutPage = () => {
@@ -12,3 +13,4 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
+

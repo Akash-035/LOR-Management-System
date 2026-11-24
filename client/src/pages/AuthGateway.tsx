@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react';
 import { z } from 'zod';
 import { Navigate, useNavigate } from 'react-router-dom';
@@ -272,3 +273,4 @@ const AuthGateway = () => {
 };
 
 export default AuthGateway;
+

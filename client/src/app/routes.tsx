@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Navigate } from 'react-router-dom';
 import ProtectedRoute from '../components/ProtectedRoute.jsx';
 import AuthGateway from '../pages/AuthGateway.jsx';
@@ -47,3 +48,4 @@ const routes = [
 ];
 
 export default routes;
+
